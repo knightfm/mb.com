@@ -6,4 +6,4 @@ $(document).ready(function(){$("#related-posts").each(function(){var e=$(this),t
 var lazyshare=!1;window.addEventListener("scroll",function(){(0!=document.documentElement.scrollTop&&!1===lazyshare||0!=document.body.scrollTop&&!1===lazyshare)&&(!function(){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="//platform-api.sharethis.com/js/sharethis.js#property=5b61089df3815e0011ed226c&amp;product=inline-share-buttons";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(e,a)}(),lazyshare=!0)},!0);
 // Comments
 function Display_Reply_Form(r){par_id=$(r).attr("id"),par_id=Valid_Par_Id(par_id),html=$(Cur_Cform_Hdr).html(),".comment_form"==Cur_Cform_Hdr?(reset_html='<a href="#origin_cform" onclick="Reset_Comment_Form()" id="resetcomments">Add Comments</a><a name="origin_cform"/>',$(Cur_Cform_Hdr).html(reset_html)):$(Cur_Cform_Hdr).html(""),Cur_Cform_Hdr="#r_f_c"+par_id,$(Cur_Cform_Hdr).html(html),$("#comment-editor").attr("src",Cform_Ins_ParID(par_id))};
-//]]>
+]]>
